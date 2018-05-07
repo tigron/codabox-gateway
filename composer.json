@@ -16,6 +16,6 @@
         "issues": "https://github.com/tigron/codabox-gateway/issues"
     },
     "autoload": {
-        "psr-4": { "Codabox\\": "lib/Codabox/" }
+        "psr-4": { "Tigron\\Codabox\\": "lib/Codabox/" }
     }
 }
