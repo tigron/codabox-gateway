@@ -5,7 +5,7 @@
  * This file is a part of the KNX Api client
  *
  */
-namespace Tigron\Codabox\Client\;
+namespace Tigron\Codabox\Client;
 
 class Json {
 
@@ -28,10 +28,14 @@ class Json {
 			$url = substr($url, 0, -1);
 		}
 
-		$return = file_get_contents($url . '/' . $module . '?' . http_build_query($variables));
+		if ($module[0] == '/') {
+			$module = substr($module, 1);
+		}
+
+		$return = @file_get_contents($url . '/' . $module . '?' . http_build_query($variables));
 
 		if ($return === false) {
-			throw new \Exception('Problem when calling ' . $url . '/' . $moduke);
+			throw new \Exception('Problem when calling ' . $url . '/' . $module);
 		}
 		return json_decode($return, true);
 	}

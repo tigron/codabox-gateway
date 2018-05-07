@@ -16,7 +16,7 @@ class Config {
 	 * @access public
 	 * @var string $key
 	 */
-	public static $key = null;
+	public static $key = '';
 
 	/**
 	 * API Url
@@ -24,5 +24,5 @@ class Config {
 	 * @access public
 	 * @var string $url
 	 */
-	public static $url = 'https://api.codabox.tigron.net;
+	public static $url = 'https://api.codabox.tigron.net';
 }
