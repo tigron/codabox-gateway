@@ -2,7 +2,7 @@
 
 ## Description
 
-Fetch CODA files from Codabox via the Tigron REST gateway
+Fetch CODA files from Codabox via the Tigron REST gateway. For more information on this service, visit: [https://codabox.tigron.net](https://codabox.tigron.net)
 
 
 ## Installation
