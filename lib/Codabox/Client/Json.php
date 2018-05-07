@@ -28,7 +28,7 @@ class Json {
 			$url = substr($url, 0, -1);
 		}
 
-		$return = @file_get_contents($url . '/' . $module . '?' . http_build_query($variables));
+		$return = file_get_contents($url . '/' . $module . '?' . http_build_query($variables));
 
 		if ($return === false) {
 			throw new \Exception('Problem when calling ' . $url . '/' . $moduke);
